@@ -37,8 +37,8 @@ public class DateActivity extends Activity {
 
 		// month
 		int curMonth = calendar.get(Calendar.MONTH);
-		String months[] = new String[] {"Ò»ÔÂ", "¶şÔÂ", "ÈıÔÂ", "ËÄÔÂ", "ÎåÔÂ",
-				"ÁùÔÂ", "ÆßÔÂ", "°ËÔÂ", "¾ÅÔÂ", "Ê®ÔÂ", "Ê®Ò»ÔÂ", "Ê®¶şÔÂ"};
+		String months[] = new String[] {"ä¸€æœˆ", "äºŒæœˆ", "ä¸‰æœˆ", "å››æœˆ", "äº”æœˆ",
+				"å…­æœˆ", "ä¸ƒæœˆ", "å…«æœˆ", "ä¹æœˆ", "åæœˆ", "åä¸€æœˆ", "åäºŒæœˆ"};
 		month.setViewAdapter(new DateArrayAdapter(this, months, curMonth));
 		month.setCurrentItem(curMonth);
 		month.addChangingListener(listener);
